@@ -1,0 +1,166 @@
+/* إزالة المسافات الافتراضية للمتصفح */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* التخطيط الشبكي للحاوية الكبيرة */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* العمود الأول 250 بكسل، العمود الثاني يأخذ باقي المساحة */
+    min-height: 100vh; /* جعل طول الموقع يأخذ كامل ارتفاع الشاشة */
+}
+
+/* تنسيق الشريط الجانبي */
+.sidebar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* تأثير المرور وتنسيق الصفحة النشطة */
+.sidebar ul li a:hover, .sidebar ul li a.active {
+    background-color: #34495e;
+    color: #3498db;
+    padding-right: 15px; /* إزاحة بسيطة لإعطاء حيوية */
+}
+
+/* تنسيق المحتوى الرئيسي */
+.main-content {
+    padding: 30px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+/* تقسيم الكروت باستخدام Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h3 {
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* ======================================================== */
+/* إضافات متناسقة لتغطية صفحة المستخدمين والإعدادات */
+/* ======================================================== */
+
+/* تنسيق جدول المستخدمين */
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.users-table th, .users-table td {
+    padding: 15px;
+    text-align: right;
+    border-bottom: 1px solid #eee;
+}
+
+.users-table th {
+    background-color: #34495e;
+    color: white;
+}
+
+.users-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* تنسيق نموذج الإعدادات */
+.settings-form {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #27ae60;
+}

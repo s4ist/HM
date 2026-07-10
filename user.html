@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم | المستخدمين</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- الشريط الجانبي مع تفعيل زر المستخدمين -->
+        <aside class="sidebar">
+            <h2>لوحة الإدارة</h2>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="users.html" class="active">المستخدمين</a></li>
+                <li><a href="settings.html">الإعدادات</a></li>
+            </ul>
+        </aside>
+
+        <!-- جدول بيانات المستخدمين -->
+        <main class="main-content">
+            <header>
+                <h1>إدارة المستخدمين</h1>
+            </header>
+            
+            <table class="users-table">
+                <thead>
+                    <tr>
+                        <th>الاسم</th>
+                        <th>الإيميل</th>
+                        <th>الدور</th>
+                        <th>الحالة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>أحمد محمد</td>
+                        <td>ahmed@example.com</td>
+                        <td>مدير</td>
+                        <td>نشط</td>
+                    </tr>
+                    <tr>
+                        <td>سارة علي</td>
+                        <td>sara@example.com</td>
+                        <td>محرر</td>
+                        <td>نشط</td>
+                    </tr>
+                    <tr>
+                        <td>خالد حسن</td>
+                        <td>khaled@example.com</td>
+                        <td>مستخدم</td>
+                        <td>معطل</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+</body>
+</html>
